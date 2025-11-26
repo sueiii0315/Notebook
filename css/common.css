@@ -18,4 +18,4 @@ table{width: 100%;table-layout:fixed; margin:0; padding:0; border:0; border-coll
 table caption{position:absolute;width:1px;height:1px;clip:rect(0 0 0 0);overflow:hidden;}
 :focus{outline:solid 2px #1c2750;outline-offset:1px}
 
-h1{color:#1c2750}
+h1{color:red}

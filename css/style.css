@@ -5,8 +5,8 @@
 .s_list li img{max-width:100%;}
 
 .arr_bx{position:absolute;top:50%;left:0;width:100%;height:45px;z-index:99;}
-.arr_bx .arr{position:absolute;left:0;width:45px;height:100%;cursor:pointer;opacity:0.5;background:url(image/arr_prev.png) no-repeat center center;background-size:cover;}
-.arr_bx .arr.next{right:0;background-image:url(image/arr_next.png)}
+.arr_bx .arr{position:absolute;left:0;width:45px;height:100%;cursor:pointer;opacity:0.5;background:url(../image/arr_prev.png) no-repeat center center;background-size:cover;}
+.arr_bx .arr.next{right:0;background-image:url(../image/arr_next.png)}
 .arr_bx .arr:hover{opacity:1;}
 .arr_bx .arr.none,
 .arr_bx .arr.none:hover{opacity:0.6}

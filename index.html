@@ -48,7 +48,7 @@
             if($('.s_list li').first().hasClass('active')){
                 arrFunc();
             }else{
-                $('.s_list').children('.active').removeClass('active').next('.s_list li').addClass('active');
+                $('.s_list').children('.active').removeClass('active').prev('.s_list li').addClass('active');
                 arrFunc();
             }
         }

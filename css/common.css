@@ -6,7 +6,7 @@ em,address{font-style:normal;}
 ul, li{list-style:none;}
 button{border:0;background:none;cursor:pointer;}
 button>span{transform: translate(0px, -0.5px);}
-*, :after, :before{box-sizing: border-box;text-size-adjust:none;/*ios Ȯ�����*/}
+*, :after, :before{box-sizing: border-box;text-size-adjust:none;}
 a img{border:0;}
 fieldset{border:0;}
 legend{display:none;}

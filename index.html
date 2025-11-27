@@ -6,6 +6,7 @@
     <title>Document</title>    
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <h1>slide 연습</h1>
@@ -21,5 +22,36 @@
             <li class="arr prev" onclick="goPrev()"></li>
         </ul>
     </div>
+
+    <script>
+        function arrFunc(){
+            if($('.r_list li').first().hasClass('active')){
+                $('.arr_bx .prev').addClass('none');
+            }else if($('.s_list').last().hasClass('active')){
+                $('.arr_bx .next').addClass('none');
+            }else{
+                $('.arr_bx .prev').removeClass('none');
+                $('.arr_bx .next').removeClass('none');
+            }
+        }
+
+        function goNext(){
+            if($('.s_list li').last().hasClass('active')){
+                arrFunc();
+            }else{
+                $('.s_list').children('.active').removeClass('active').next('.s_list li').addClass('active');
+                arrFunc();
+            }
+        }
+
+        function goPrev(){
+            if($('.s_list li').first().hasClass('active')){
+                arrFunc();
+            }else{
+                $('.s_list').children('.active').removeClass('active').next('.s_list li').addClass('active');
+                arrFunc();
+            }
+        }
+    </script>
 </body>
 </html>
